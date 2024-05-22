@@ -5,24 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html 태그 연습 2</title>
 </head>
+
 <style>
-    div{
-        color : green; 
-    }
+     /* css 주석표시 (ctrl + /) */
+
+     /* div 로 색 지정 */
+    div{ color : green;}
+   
+     /* class를 사용할때는 앞에 . 을 붙여준다 */
     .text-blue { color: blue;}
+      /* class는 중복이 가능, css 스타일 할때는 id보다 class를 주로 사용 */
+    .text-red { color: red;}
+
+     /* id를 사용할때 앞에 # 을 붙여준다  */
+     /* 중복 안됨, 무조건 하나만 */
+     /* white == #fff */
+    #bg-blue { background-color: blue;}
+    #bg-blue { color: #fff;}
+
+    #text-green {color: green;}
 </style>
+
 <body>
     <div>안녕</div>
     <div>안녕2</div>
-    <!-- 사용자한테 보이지 않는 주석 -->    
+    <!-- html 주석표시 (ctrl + /) -->
+        <!-- 사용자한테 보이지 않는 주석 -->
     <!-- div: 상차처럼 구역을 나누는 태그 -->
     <div>나는 div태그 구역을 나누는 태그</div>
     <div>나는 Block 요소야</div>
     <div class="text-blue">나는 파란색</div>
+    
     <p>paragraph의 약자</p>
+    <p class="text-red" id="text-green">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?</p>
+    <p class="text-red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?</p>
+
     <!-- Heading Tag
     h1 ~ h3까지 많이 사용한다. 사이트에서 중요한 제목등을 작성할 때 사용 -->
-    <h1>안녕하세요!</h1>
+    <h1 id="bg-blue">안녕하세요!</h1>
     <h2>안녕하세요!</h2>
     <h3>안녕하세요!</h3>
     <h4>안녕하세요!</h4>
