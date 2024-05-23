@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>css색변경연습</title>
-</head>
+  </head>
 
-<style>
-     /* css 주석표시 (ctrl + /) */
+  <style>
+    /* css 주석표시 (ctrl + /) */
 
-     /* div 로 색 지정 */
-    div{ color : green;}
-   
-     /* class를 사용할때는 앞에 . 을 붙여준다 */
-    .text-blue { color: blue;}
-      /* class는 중복이 가능, css 스타일 할때는 id보다 class를 주로 사용 */
-    .text-red { color: red;}
+    /* div 로 색 지정 */
+    div {
+      color: green;
+    }
 
-     /* id를 사용할때 앞에 # 을 붙여준다  */
-     /* 중복 안됨, 무조건 하나만 */
-     /* white == #fff */
-    #bg-blue { background-color: blue;}
-    #bg-blue { color: #fff;}
+    /* class를 사용할때는 앞에 . 을 붙여준다 */
+    .text-blue {
+      color: blue;
+    }
+    /* class는 중복이 가능, css 스타일 할때는 id보다 class를 주로 사용 */
+    .text-red {
+      color: red;
+    }
+
+    /* id를 사용할때 앞에 # 을 붙여준다  */
+    /* 중복 안됨, 무조건 하나만 */
+    /* white == #fff */
+    #bg-blue {
+      background-color: blue;
+    }
+    #bg-blue {
+      color: #fff;
+    }
     /* class 보다 id에 지정한 색이 우선순위를 가짐 */
-    #text-green {color: green;}
-</style>
+    #text-green {
+      color: green;
+    }
+  </style>
 
-<body>
+  <body>
     <div>안녕</div>
     <div>안녕2</div>
     <!-- html 주석표시 (ctrl + /) -->
-        <!-- 사용자한테 보이지 않는 주석 -->
+    <!-- 사용자한테 보이지 않는 주석 -->
     <!-- div: 상차처럼 구역을 나누는 태그 -->
     <div>나는 div태그 구역을 나누는 태그</div>
     <div>나는 Block 요소야</div>
     <div class="text-blue">나는 파란색</div>
-    
+
     <p>paragraph의 약자</p>
-    <p class="text-red" id="text-green">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?</p>
-    <p class="text-red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?</p>
+    <p class="text-red" id="text-green">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?
+    </p>
+    <p class="text-red">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, modi?
+    </p>
 
     <!-- Heading Tag
     h1 ~ h3까지 많이 사용한다. 사이트에서 중요한 제목등을 작성할 때 사용 -->
@@ -50,5 +70,5 @@
     <h4>안녕하세요!</h4>
     <h5>안녕하세요!</h5>
     <h6>안녕하세요!</h6>
-</body>
+  </body>
 </html>

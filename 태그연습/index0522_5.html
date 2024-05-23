@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>a태그연습</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <!-- style.css파일과 외부로 연결해서 페이지 전체의 적용 가능 -->
-</head>
+  </head>
 
-<style>
-    .naver-box {background-color: yellow;}
-    .google-box {background-color: pink;}
-</style>
+  <style>
+    .naver-box {
+      background-color: yellow;
+    }
+    .google-box {
+      background-color: pink;
+    }
+  </style>
 
-<body>
+  <body>
     <a href="https://www.naver.com/" target="_self">네이버로 이동</a>
     <!-- a태그의 target 속성 기본은 _self (기존 창의 연결됨)  -->
     <!-- 새창으로 연결시, _blank 로 변경 -->
     <!-- href = 링크하고 싶은 웹사이트 주소 작성 -->
 
     <a href="https://www.google.co.kr/?hl=ko" target="_blank">구글로 이동</a>
-    
+
     <!-- 다른파일로 이동할 때 : href안에 이동할 파일이 있는 경로 -->
     <a href="./index0522_4.html" target="_blank">css태그연습파일로 이동</a>
 
-
     <!-- src : 보여줄 이미지 경로 -->
     <!-- alt : 이미지 뜨지 않을 경우,  대체 텍스트 -->
-    <img src="./images/구글 로고.png" alt="구글로고">
-    <img src="./images/네이버 로고.png" alt="네이버로고">
-
-
+    <img src="./images/구글 로고.png" alt="구글로고" />
+    <img src="./images/네이버 로고.png" alt="네이버로고" />
 
     <!-- 네이버 이미지 클릭시 네이버 이동 -->
-    <div class="naver-box"><a href="https://www.naver.com/" target="_blank"><img src="./images/네이버 로고.png" alt="네이버로고"></a></div>
-    
+    <div class="naver-box">
+      <a href="https://www.naver.com/" target="_blank"
+        ><img src="./images/네이버 로고.png" alt="네이버로고"
+      /></a>
+    </div>
+
     <!-- 구글 이미지 클릭시 구글 이동 -->
-    <div class="google-box"><a href="https://www.google.co.kr/?hl=ko" target="_blank"><img src="./images/구글 로고.png" alt="구글로고"></a></div>
+    <div class="google-box">
+      <a href="https://www.google.co.kr/?hl=ko" target="_blank"
+        ><img src="./images/구글 로고.png" alt="구글로고"
+      /></a>
+    </div>
 
+    <p>클릭시 <a href="./index0522_5.html">index0522_5.html</a> 로 이동</p>
 
-     <p>클릭시 <a href="./index0522_5.html">index0522_5.html</a> 로 이동</p>
+    <a href="mailto:hyejeonglee0903@gmail.com">이메일 보내기</a>
+    <a href="tel:01081390617">전화 걸기</a>
 
-     <a href="mailto:hyejeonglee0903@gmail.com">이메일 보내기</a>
-     <a href="tel:01081390617">전화 걸기</a>
-
-
-     <a href="./images/구글 로고.png" download>구글 로고 다운로드</a>
-     <a href="./images/네이버 로고.png" download>네이버 로고 다운로드</a>
+    <a href="./images/구글 로고.png" download>구글 로고 다운로드</a>
+    <a href="./images/네이버 로고.png" download>네이버 로고 다운로드</a>
 
     <!-- 구글 로고 이미지 클릭시 해당 로고 다운로드 -->
-     <a href="./images/구글 로고.png" download><img src="./images/구글 로고.png" alt="구글로고"></a>
-     <a href="./images/네이버 로고.png" download> <img src="./images/네이버 로고.png" alt="네이버로고"></a>
-</body>
+    <a href="./images/구글 로고.png" download
+      ><img src="./images/구글 로고.png" alt="구글로고"
+    /></a>
+    <a href="./images/네이버 로고.png" download>
+      <img src="./images/네이버 로고.png" alt="네이버로고"
+    /></a>
+  </body>
 </html>

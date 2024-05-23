@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>block and inline</title>
-</head>
+  </head>
 
-<style>
-     .bg-sky p {background-color: skyblue;}
-     .bg-pink span {background-color: pink;}
-     .text-yellow {color: yellow;}
-</style>
+  <style>
+    .bg-sky p {
+      background-color: skyblue;
+    }
+    .bg-pink span {
+      background-color: pink;
+    }
+    .text-yellow {
+      color: yellow;
+    }
+  </style>
 
-<body>
+  <body>
     <!-- block/inline -->
     <!-- block: 가로사이즈를 100% 차지하는 요소 :div, p, h1-6-->
     <!-- inline: 작성한 내용만큼만 가로 사이즈 차지: span-->
@@ -23,37 +29,36 @@
     <span class="bg-pink">123</span>
     <span class="bg-pink">345</span>
 
-<!-- ctrl + shift + p / wrap + enter / div -->
+    <!-- ctrl + shift + p / wrap + enter / div -->
     <div class="bg-sky">
-        <p>123</p>
-        <p>123</p>
-        <p>123</p>
-        <p>123</p>
-        <p>123</p>
-        <p>123</p>
-        <p>123</p>
+      <p>123</p>
+      <p>123</p>
+      <p>123</p>
+      <p>123</p>
+      <p>123</p>
+      <p>123</p>
+      <p>123</p>
     </div>
 
     <div class="bg-pink">
-        <span>456</span>
-        <span>456</span>
-        <span>456</span>
-        <span>456</span>
-        <span>456</span>
-        <span>456</span>
-        <span>456</span>
-        <span>456</span>
+      <span>456</span>
+      <span>456</span>
+      <span>456</span>
+      <span>456</span>
+      <span>456</span>
+      <span>456</span>
+      <span>456</span>
+      <span>456</span>
     </div>
 
     <span>
-        <div>나는 block 요소여서 inline인 span안에 들어갈 수 없어.</div>
-        <p>나도 block요소여서 span안에 들어갈 수 없어.</p>
-        <!-- block요소 안에 span이 들어갈 수 있음. -->
+      <div>나는 block 요소여서 inline인 span안에 들어갈 수 없어.</div>
+      <p>나도 block요소여서 span안에 들어갈 수 없어.</p>
+      <!-- block요소 안에 span이 들어갈 수 있음. -->
     </span>
 
- <!-- span: block요소 안에 특정 부분에만 스타일을 적용하고 싶을 때 사용 -->
+    <!-- span: block요소 안에 특정 부분에만 스타일을 적용하고 싶을 때 사용 -->
 
-     <h2>안녕하세요 저는 <span class="text-yellow">이혜정</span> 입니다.</h2>
-
-</body>
+    <h2>안녕하세요 저는 <span class="text-yellow">이혜정</span> 입니다.</h2>
+  </body>
 </html>
