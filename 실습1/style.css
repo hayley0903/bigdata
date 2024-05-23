@@ -1,0 +1,19 @@
+.box {height: 200px;
+      width: 400px;
+      padding: 100px;
+      margin: 100px;
+      border: 5px solid;
+      border-radius: 30px;
+      text-align: center;}
+
+img {width: 400px;}
+
+.line-blue {border-color: blue;
+            margin: 100px auto;
+            }
+
+.line-green {border-color: green;
+             margin: 100px auto;}
+
+#text-green {color: green;}
+#text-bold {font-weight: bold;}
