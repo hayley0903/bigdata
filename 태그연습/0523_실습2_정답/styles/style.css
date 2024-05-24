@@ -1,0 +1,13 @@
+body {background-color: black;}
+
+.google {width: 500px;
+        margin: 100px auto 0 auto;
+        text-align: center;
+      }
+
+.open-google {background-color: white;
+              padding: 20px;
+              border-radius: 30px;
+              }
+
+.open-google span {font-weight: bold}
