@@ -1,9 +1,11 @@
+.box div {width: 1000px;
+height:50px;}
 
 
-.content div { display: flex;
-      justify-content: center;
-      margin: 0 auto;
-      width: 500px;
-      height: 200px;
-    }
+.item1 {background-color: aquamarine;}
 
+.item2 {background-color: cornflowerblue}
+
+.item3 {background-color: coral;}
+
+.item4 {background-color: lightgreen;}
