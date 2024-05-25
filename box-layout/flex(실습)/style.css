@@ -1,11 +1,37 @@
-.box div {width: 1000px;
-height:50px;}
 
 
-.item1 {background-color: aquamarine;}
+.container {
+    height:750px;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+}
 
-.item2 {background-color: cornflowerblue}
+.container div {
+    font-size:large;}
 
-.item3 {background-color: coral;}
+.header {
+    background-color: aquamarine;
+    height: 100px;}
 
-.item4 {background-color: lightgreen;}
+.section-container {
+    height: 500px;
+    display: flex;
+    }
+
+.section1 {
+    background-color: cornflowerblue;
+    height: 100%;
+    width:20%;
+    }
+
+.section2 {
+    background-color: coral;
+    height: 100%;
+    width:80%;
+    }
+
+.footer {
+    background-color: lightgreen;
+    height: 150px;
+    }
