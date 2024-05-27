@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
   height:750px;
   width: 1000px;
@@ -33,3 +34,42 @@
   background-color: lightgreen;
   height: 150px;
   }
+=======
+
+
+.container {
+    height:750px;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.container div {
+    font-size:large;}
+
+.header {
+    background-color: aquamarine;
+    height: 100px;}
+
+.section-container div{
+    height: 500px;
+    float: left;
+    }
+
+.section1 {
+    background-color: cornflowerblue;
+    height: 100%;
+    width:20%;
+    }
+
+.section2 {
+    background-color: coral;
+    height: 100%;
+    width:80%;
+    }
+
+.footer {clear: both;
+    background-color: lightgreen;
+    height: 150px;
+    }
+>>>>>>> 89f24175d4bcbdd1ad223d0cf8e71ddc039e2f9b
