@@ -1,0 +1,84 @@
+/* 1. 이미지/ 백그라운드 이미지
+2. flex 수평 정렬 (양끝)
+3. background-image url, repeat, position, size */
+
+li {
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: black;
+}
+
+.logo img {
+  width: 80px;}
+
+.menu-list {
+    display: flex;
+    color: white;
+    }
+
+.back-img {
+  height: 400px;
+  background-image: url(./images/bgimage.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.title1 {
+  padding-top: 50px;
+  color: white;
+  text-align: center;}
+
+.title2 {
+  color: white;
+  text-align: center;}
+
+.box1 {
+  padding: 50px;
+  margin: -50px auto;
+  width: 500px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;}
+
+.container {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.box2 {
+  padding: 10px;
+  margin: 50px 0;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;}
+
+.box3 {
+  padding: 10px;
+  margin: 50px 0;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;}
+
+.box4 {
+  padding: 10px;
+  margin: 50px 0;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;}
