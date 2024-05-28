@@ -1,0 +1,98 @@
+
+* {padding:0;
+    margin:0;}
+
+.global-header {
+  background-color: rgb(156, 201, 230);
+  font-size: 36px;
+  text-align: center;}
+  
+.bg-img {background-image: url(./images/nature1.jpeg);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;}
+        
+.card-list {margin-top: 40px;
+            display: flex;
+            justify-content: center;}
+
+.card-list div {
+  text-align: center;
+  border: 2px solid black;
+  width: 400px;
+  height: 400px;
+  margin: 0 30px;}
+
+.global-footer {
+  margin-top: 40px;
+  background-color: rgb(156, 201, 230);
+  font-size: 36px;
+  text-align: center;}
+
+/* break point: 1200px / 768px 
+    1200px 이상: Desktop
+    768px~1200px: Tablet
+    768px 이하: Mobile
+    
+    1.max-width: (D -> T -> M) 
+    2.min-width: (M -> T -> D)
+    
+    */
+
+/* 최대가 1200px / 1200px 이하부터 적용할 화면 */
+@media screen and (max-width : 1200px) {
+
+  .global-header {
+    background-color: rgb(230, 156, 187);
+    font-size: 24px;
+    text-align: center;}
+
+  .global-footer {
+    margin-top: 20px;
+    background-color: rgb(230, 156, 187);
+    font-size: 24px;
+    text-align: center;}
+
+  .bg-img {background-image: url(./images/nature2.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+}
+
+/* 최대가 1200px / 768px 이하부터 적용할 화면 */
+@media screen and (max-width : 768px) {
+
+  .global-header {
+    background-color: rgb(156, 230, 214);
+    font-size: 14px;
+    text-align: center;}
+
+  .global-footer {
+    margin-top: 10px;
+    background-color: rgb(156, 230, 214);
+    font-size: 14px;
+    text-align: center;}
+
+  .bg-img {background-image: url(./images/nature\ 3.webp);
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+
+  .card-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  align-items: center;}
+
+  .card-list div {
+    text-align: center;
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    margin: 20px 0;}
+      
+}
+
