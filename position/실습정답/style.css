@@ -17,6 +17,7 @@ a {
 li {list-style: none ;}
 
 button {
+  cursor: pointer;
   border: none;
   background-color: transparent;}
 
@@ -242,3 +243,32 @@ button {
   display: none;
 }
 }
+
+.popup {
+  display: none;
+  width: 500px;
+  height: 500px;
+  border: 2px solid black; 
+  border-radius: 12px; 
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup.is-active {
+  display: block;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;}
+
+.popup img {width: 100%;}
+
+
+.popup-close-btn {
+  font-size:30px;
+ }
