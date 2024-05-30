@@ -1,8 +1,244 @@
 .gamja-flower-regular {
   font-family: "Gamja Flower", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal;}
+
+body {font-family: "Gamja Flower", sans-serif;}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;}
+
+a {
+  text-decoration: none;
+  color:#fff}
+
+li {list-style: none ;}
+
+button {
+  border: none;
+  background-color: transparent;}
+
+.global-header {
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 수직정렬 */
+  padding: 12px 40px;}
+
+.logo img {
+  width: 60px;}
+
+.gnb-list {
+  display:flex;}
+  /* menu간의 수평정렬 */
+
+.gnb-list li {
+  margin-right: 20px;}
+  /* menu사이의 간격조절 */
+
+.gnb-list li:last-child {
+  margin-right: 0;}
+/* menu4만 선택해서 margin없애기 */
+
+.gnb-list li a {
+  font-weight: bold;
+  transition: color 500ms;}
+  /* 클릭했을때 파란색으로 변화가 5초후 서서히 나타나게... */
+
+.gnb-list li a:hover {
+  color:cornflowerblue;}
+
+
+  /*main css */
+.back-img {
+  height: 500px;
+  background-image: url(../실습/assets/images/스누피배경.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;}
+
+.back-img h2 {
+  font-size: 42px;}
+
+.back-img p {
+  font-size: 22px;
+  width: 800px;
+  text-align: center;
+  margin-top: 20px;}
+
+.popup-open-btn {
+  background-color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  /* 클릭시 포인터 모양으로 변화 */}
+
+.card-list {
+  display: flex;
+  width: 90%;
+  margin: 40px auto;
+  justify-content: space-between;
 }
 
-body {font-family: "Gamja Flower", sans-serif;
+.card-list div {
+  width: 30%;
+  background-color: #bce0ee;
+  text-align: center;
+  padding: 20px 12px;
+  border-radius: 12px;
+}
+
+.card-list p {
+  margin-top: 12px;
+}
+
+.fix-box {
+  background-color: #bce0ee;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fix-box div {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-attachment: fixed;
+}
+
+.fix-img1 {
+  margin-right: 20px;
+  background-image: url(../실습/assets/images/pngegg.png);
+  background-position: bottom left 260px;
+}
+
+
+.fix-img2 {
+  background-image: url(../실습/assets/images/스누피2.png);
+  background-position: bottom right 240px;
+}
+
+
+.global-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: skyblue;
+  padding: 20px 40px;
+  color: #fff;
+  align-items: center;
+}
+
+.sns-link {
+  display: flex;}
+
+.sns-link li a {
+  padding: 12px;}
+
+.sns-link li a i {
+  font-size: 30px;
+  transition: color 300m;
+}
+
+.sns-link li a:hover {
+  color:dodgerblue;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.top-btn a i {
+  color: rgb(60, 143, 175);
+  font-size: 40px;}
+
+
+.quick-menu {position: fixed;
+    top: 200px;
+    right: 50px;}
+
+.quick-menu ul {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.quick-menu ul li a {
+  color:#333;
+
+}
+
+@media screen and (max-width: 1200px) {
+
+.card-list {
+  flex-direction: column;
+  width: 70%;
+}
+
+.card-list div {
+  width: 100%;
+  margin: 12px 0;}
+
+.fix-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: rgb(185, 235, 255);
+}
+
+.fix-box div {
+  background-color: transparent;
+}
+
+.fix-img1 {
+  margin-right: 0;
+  background-image: url(../실습/assets/images/pngegg.png);
+  background-position: bottom center;
+}
+  
+.fix-img2 {
+  display: none;
+  background-position: center;
+}
+  
+}
+
+@media screen and (max-width: 768px){
+
+.card-list {
+  width: 90%;
+}
+
+.global-footer {
+  flex-direction: column;
+  margin-top: 12px;
+}  
+
+.sns-link li a {
+  padding: 8px;
+}
+
+.sns-link li a i {
+  font-size: 20px;
+}
+
+.quick-menu {
+  display: none;
+}
 }
