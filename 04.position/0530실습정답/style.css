@@ -21,6 +21,10 @@ button {
   border: none;
   background-color: transparent;}
 
+/* 모바일 버전에서만 보일 요소 */
+.sm-only {display: none;}
+.sm-hidden {display: block;}
+
 .global-header {
   background-color: skyblue;
   display: flex;
@@ -56,7 +60,7 @@ button {
   /*main css */
 .back-img {
   height: 500px;
-  background-image: url(../실습/assets/images/스누피배경.jpeg);
+  background-image: url(../0529실습/assets/images/스누피배경.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -121,13 +125,13 @@ button {
 
 .fix-img1 {
   margin-right: 20px;
-  background-image: url(../실습/assets/images/pngegg.png);
+  background-image: url(../0529실습/assets/images/pngegg.png);
   background-position: bottom left 260px;
 }
 
 
 .fix-img2 {
-  background-image: url(../실습/assets/images/스누피2.png);
+  background-image: url(../0529실습/assets/images/스누피2.png);
   background-position: bottom right 240px;
 }
 
@@ -213,7 +217,45 @@ button {
   font-size:30px;
  }
 
+.sidebar {
+  background-color: #fff;;
+  position:fixed;
+  top:0;
+  right:0;
+  transform: translateX(300px);
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  transition: 1000ms;
+  }
+
+.sidebar.is-active {
+  transform: translateX(0);
+
+}
+
+.sidebar-close-btn {
+  text-align: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.sidebar ul li {
+  text-align: center;
+  font-size: 22px;}
+
+.sidebar ul li a {
+  display: inline-block;
+  /* inline tag는 상하여백이 적용되지 않음 */
+  /* display: inline-block으로 적용시 상하여백 적용 */
+  color: #000;
+  padding: 10px 0;
+ }
+
+
+
 @media screen and (max-width: 1200px) {
+
 
 .card-list {
   flex-direction: column;
@@ -250,6 +292,14 @@ button {
 }
 
 @media screen and (max-width: 768px){
+
+.sm-only {display: block;}
+.sm-hidden {display: none;}
+
+.sidebar-open-btn {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;}
 
 .card-list {
   width: 90%;
