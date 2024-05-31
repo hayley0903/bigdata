@@ -280,7 +280,7 @@ button {
 
 .fix-img1 {
   margin-right: 0;
-  background-image: url(../실습/assets/images/pngegg.png);
+  background-image: url(../0529실습/assets/images/스누피2.png);
   background-position: bottom center;
 }
   
@@ -288,7 +288,6 @@ button {
   display: none;
   background-position: center;
 }
-  
 }
 
 @media screen and (max-width: 768px){
