@@ -27,7 +27,10 @@ body {font-family: "Roboto", sans-serif;}
 .logo img {
   width: 50px;
   height: 50px;
-}
+   }
+
+.sm-only {display: none;}
+
 
 .gnb-list1 {
   display: flex;
@@ -123,11 +126,21 @@ body {font-family: "Roboto", sans-serif;}
 
 /* search page */
 
-.search-open-btn {
+.search{
   background-color: gray;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%);
+}
+
+.search.is-active {
+  transform: translate(-50%, -50%);
 }
 
 .search-item {
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,35 +165,69 @@ body {font-family: "Roboto", sans-serif;}
  
 }
 
-.search-close-btn  {
+.search-close-btn i {
   text-align: center;
   font-size: 30px;
   background-color: yellow;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 100px;
+  cursor: pointer;
   }
 
 
+.sidebar {
+  background-color: #fff;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-350px)
+}
 
-@media screen and (max-width:1200px) {
+.sidebar.is-active {
+  transform: translate(0)
+}
 
-  .burger-list {
-    width: 90%;
+.sidebar ul li {margin-bottom: 20px;
+}
+
+.sidebar-close-btn {
+  text-align: right;
+  font-size: 22px;
+  cursor: pointer; }
+
+
+  @media screen and (max-width: 1200px) {
+
+    .burger-list{
+      width: 90%;
     }
-  
-  .burger {
-    width: 43%;
-  
-  }
-  
-  .burger img {
-    width: 300px;
-  }
+
+    .burger {
+      width: 43%;
+    }
+
+    .burger img {
+      width: 300px;
+    }
+
   }
 
 
-  @media screen and (max-width:768px) {
+
+  @media screen and (max-width:768px) { 
+    
+    .sm-only {display: block;}
+    .sm-hidden {display: none;}
+
+    .sidebar-open-btn {
+      font-size: 22px;
+      cursor: pointer;
+    }
 
     .burger-list {
       width: 90%;
@@ -188,11 +235,11 @@ body {font-family: "Roboto", sans-serif;}
     
     .burger {
       width: 87$%;
-    
     }
     
     .burger img {
       width: 100%;
     }
+
     }
-    }
+    
