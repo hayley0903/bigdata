@@ -1,0 +1,193 @@
+.jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {font-family: "Jua", sans-serif;}
+
+/* 전체문서의 여백 없애기 */
+*{
+  padding:0;
+margin:0;}
+
+/* list 스타일 없애기 */
+li {list-style: none;}
+
+/* a태그의 기본 속성 (밑줄없음) */
+a {
+  color: #fff;
+  text-decoration: none;}
+
+input {
+  border: none;}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;}
+
+/* header */
+
+.sm-only {display: none;}
+
+.global-header {
+  padding: 12px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.gnb-list {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gnb-list li a {
+  color:black;
+  font-size: 17px;
+  transition: color 300ms ease-in-out;
+}
+
+.gnb-list li a:hover {
+  color: rgb(235, 27, 27);}
+
+.search-btn {cursor: pointer;}
+
+.lnb {
+  background-color: rgb(235, 27, 27);
+  border-top: 4px solid yellow;
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+.lnb-list {
+  display: flex;
+  padding: 12px 40px;
+}
+
+.lnb-list li {padding-right: 16px;}
+
+.lnb-list a {
+    color: #fff;
+  }
+
+.back-img {
+  background-image: url(../assets/images/back.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.menu-item {
+  /* offset-x /offset-y blur*/
+  box-shadow: 3px 3px 5px #e1e1e1;
+  border-radius: 12px;
+  text-align: center;
+  width: calc((100% - 60px)/3);
+  overflow: hidden;
+  margin:16px 0;
+}
+
+.menu-item img {
+  width: 100%;
+}
+
+.menu-item a {
+  transition: opacity 300ms ease-in-out;
+}
+
+/* opacity의 기본값은 1로 불투명 */
+/* 값을 0으로 주면 완전히 투명해서 안보임 */
+.menu-item a:hover{
+  opacity: 0.5;
+}
+
+
+.mac-story {
+  border-top: 4px solid yellow;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  padding: 8px 0;
+  background-color: #fff;
+}
+
+.mac-story-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+}
+
+.mac-story-list li img {
+  width: 100px;
+  height: 100px;
+    /* img가 100px 100px 박스 안에 꽉 차게 */
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.global-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(235, 27, 27);
+  padding:20px 40px;
+  align-items: center;
+}
+
+.footer-1 {
+  margin-right: 200px;
+}
+
+.footer-2 {
+  color: white;
+  flex-grow: 1;}
+
+.footer-3 {
+  display: flex;
+  justify-content: space-between;}
+
+.footer-3 li {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 8px;
+}
+
+
+.footer-3 li i {
+  color:rgb(235, 27, 27);
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 300ms;
+}
+
+.footer-3 li i:hover{
+  color: white;}
+
+.footer-3 li:hover {
+  background-color: red;
+}
