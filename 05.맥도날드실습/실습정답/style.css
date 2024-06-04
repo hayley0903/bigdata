@@ -172,8 +172,8 @@ button {
   border-radius: 50%;
   position: relative;
   margin: 0 8px;
+  cursor: pointer;
 }
-
 
 .footer-3 li i {
   color:rgb(235, 27, 27);
@@ -185,9 +185,158 @@ button {
   transition: color 300ms;
 }
 
-.footer-3 li i:hover{
+.footer-3 li:hover i{
   color: white;}
 
 .footer-3 li:hover {
   background-color: red;
 }
+
+
+.search {
+  position: fixed;
+  /* 모든좌표가 0일때 전체화면을 채움 */
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  }
+
+.search.is-open {
+  display: block;
+}
+
+  /* search바로 아래 자식요소만 선택 */
+  /* search div {}로만 하면 아래 모든 자식 요소 선택 */
+  .search > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .search-box {
+    display: flex;
+    width: 100%;
+  }
+
+  .search-box input {
+    flex-grow: 1;
+    margin-right: 20px;
+    padding: 24px 40px;
+    border-radius: 30px;
+  }
+
+  .search-box button {
+    background-color: yellow;
+    padding: 24px 40px;
+    border-radius: 30px;
+  }
+
+  .search-close-btn {
+    margin-top: 40px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+  }
+
+  .search-close-btn i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 1200px) {
+      
+  .menu-item {
+    width: calc((100% - 30px)/2);
+  }
+
+  .mac-story-list {
+    width: 50%;
+  }
+  
+  .mac-story-list li img {
+    width: 80px;
+    height: 80px;
+  }
+  
+
+  }
+
+  @media screen and (max-width: 768px) {
+    
+  .sm-only {display: flex;}
+  .sm-hidden {display: none;}
+
+  .sidebar-open-btn {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-item {
+    width: 100%;
+  }
+
+
+  .global-footer {
+    padding:20px 40px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-1 {
+    margin-right: 20px;
+  }
+  
+  .footer-2 {
+    text-align: right;
+  }
+  
+  .footer-3 {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;}
+
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+  }
+
+  .sidebar.active {
+    display: block;
+  }
+
+  .sidebar ul li a {color: black;}
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .overlay.active {display: block;}
+
+  }
+
