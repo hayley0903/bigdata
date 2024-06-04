@@ -9,7 +9,8 @@ body {font-family: "Jua", sans-serif;}
 /* 전체문서의 여백 없애기 */
 *{
   padding:0;
-margin:0;}
+  margin:0;
+  box-sizing: border-box;}
 
 /* list 스타일 없애기 */
 li {list-style: none;}
@@ -310,24 +311,33 @@ button {
     justify-content: center;}
 
   .sidebar {
-    display: none;
+    /* display: none; */
     position: fixed;
     top: 0;
     left: 0;
     width: 200px;
+    padding: 50px;
     height: 100%;
     background-color: #fff;
-    z-index: 100;
+    z-index: 100;;
+    transform: translate(-200px);
+    transition: transform 500ms ease-in-out;
   }
+  
 
   .sidebar.active {
     display: block;
+    transform: translate(0);
   }
+    
 
   .sidebar ul li a {color: black;}
 
   .overlay {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 800ms ease-in-out;
     position: fixed;
     top: 0;
     left: 0;
@@ -336,7 +346,10 @@ button {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
-  .overlay.active {display: block;}
+  .overlay.active {
+    visibility: visible;
+    opacity: 1;
+    }
 
   }
 
