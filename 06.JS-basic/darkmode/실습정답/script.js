@@ -4,7 +4,6 @@
 //header 태그에 dark class add 추가
 
 // let modeBtn = document.querySelector('.mode-btn');
-// let count = 0;
 
 // function modeToggle () {
 //   let modeTxt = modeBtn.innerHTML;
@@ -26,23 +25,23 @@
 // modeBtn.addEventListener('click', modeToggle);
 
 
-let modeBtn = document.querySelector('.mode-btn');
-let count = 0;
+// let modeBtn = document.querySelector('.mode-btn');
+// let count = 0;
 
-function modeToggle () {
-  let modeTxt = modeBtn.innerHTML;
-  let header = document.querySelector('header');
-  count += 1;
+// function modeToggle () {
+//   let modeTxt = modeBtn.innerHTML;
+//   let header = document.querySelector('header');
+//   count += 1;
 
-  //1, 3, 5, 7 = > Darkmode
-  //2, 4, 6, 8 = > Lightmode
+//   //1, 3, 5, 7 = > Darkmode
+//   //2, 4, 6, 8 = > Lightmode
 
-if (count % 2 == 0) {
-  this.innerHTML = 'Dark';
-  header.classList.remove('dark');
-} else {
-  this.innerHTML = 'Light';
-  header.classList.add('dark');
-}
-}
-modeBtn.addEventListener('click', modeToggle);
+// if (count % 2 == 0) {
+//   this.innerHTML = 'Dark';
+//   header.classList.remove('dark');
+// } else {
+//   this.innerHTML = 'Light';
+//   header.classList.add('dark');
+// }
+// }
+// modeBtn.addEventListener('click', modeToggle);

@@ -21,7 +21,7 @@ header.dark {
   color: #fff;
 }
 
-header.dark .mode-btn {
+header.dark mode-btn {
   background-color: #fff;
   color: #333;
 }
