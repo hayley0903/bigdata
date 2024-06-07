@@ -1,0 +1,18 @@
+#lightmode {
+  background-color: white;
+  padding: 20px 40px;
+  border-bottom: 3px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#darkbutton {
+  border-radius: 20px;
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
