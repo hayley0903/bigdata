@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<style>
+    .wrapper {margin: 100px 70px;
+    }
+
+
+    .header {
+        border-bottom: 2px solid #ccc;
+    }
+
+    textarea {
+    width: 500px;
+    height: 100px;
+  }
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>회원가입</h1>
+            <p>회원가입 페이지 입니다. 본사는 고객님들의 개인정보를 소중하고 안전하게 보관하고 있습니다. <br>
+                불편사항이 있으시면 042-1234-1234로 연락주시기 바랍니다.
+            </p>
+        </div>
+        <form action="./action.html" method="get">
+            <table>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" placeholder="아이디를 입력하세요"><button>아이디 중복체크</button></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>국적</td>
+                    <td><select class="nationality" name="" id=""></select></td>
+                </tr>
+                <tr>
+                    <td>생년월일</td>
+                    <td>
+                        <select class="year" name="" id=""></select>년
+                        <select class="month" id=""></select>월
+                        <select class="date" id=""></select>일
+                    </td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td><span>남자</span><input type="radio">
+                        <span>여자</span><input type="radio"></td>
+                </tr>
+                <tr>
+                    <td>전화번호</td>
+                    <td><select name="" id=""></select>-
+                    <input type="number">
+                    <input type="number"></td>
+                </tr>
+                <tr>
+                    <td>희망연봉</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>취미</td>
+                    <td><input type="checkbox"><span>양궁</span>
+                        <input type="checkbox"><span>등산</span>
+                        <input type="checkbox"><span>영화감상</span>
+                        <input type="checkbox"><span>음악감상</span>
+                        <input type="checkbox"><span>독서</span>
+                        <input type="checkbox"><span>다도</span>
+                        <input type="checkbox"><span>수영</span>
+                        <input type="checkbox"><span>낚시</span>
+                        <input type="checkbox"><span>농구</span>
+                        <input type="checkbox"><span>야구</span>
+                        <input type="checkbox"><span>축구</span>
+                        <input type="checkbox"><span>악기</span>
+                        <input type="checkbox"><span>캘리그라피</span>
+                        <input type="checkbox"><span>바둑</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>증명사진</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>자기소개서</td>
+                    <td><textarea name="" id="" placeholder="400자 미만으로 작성하시오."></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
