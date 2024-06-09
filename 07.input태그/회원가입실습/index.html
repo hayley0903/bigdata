@@ -44,7 +44,39 @@
                 </tr>
                 <tr>
                     <td>국적</td>
-                    <td><select class="nationality" name="" id=""></select></td>
+                    <td><select class="nationality" name="" id="">
+                        <optgroup label="Asia">
+                            <option value="kor">대한민국</option>
+                            <option value="pdk" disabled>북한</option>
+                            <option value="jap">일본</option>
+                            <option value="chi">중국</option>
+                            <option value="vie">베트남</option>
+                        </optgroup></label>
+                        <optgroup label="Europe">
+                            <option value="ger">독일</option>
+                            <option value="fra">프랑스</option>
+                            <option value="eng">영국</option>
+                            <option value="ita">이탈리아</option>
+                            <option value="spa">스페인</option>
+                          </optgroup>
+                          <optgroup label="America">
+                            <option value="usa">미국</option>
+                            <option value="can">캐나다</option>
+                            <option value="mex">맥시코</option>
+                            <option value="bra">브라질</option>
+                            <option value="arh">아르헨티나</option>
+                          </optgroup>
+                          <optgroup label="Africa">
+                            <option value="usa">케냐</option>
+                            <option value="can">가나</option>
+                            <option value="usa">잠비아</option>
+                            <option value="can">우간다</option>
+                          </optgroup>
+                    </select>
+                    
+                    </td>
+  
+
                 </tr>
                 <tr>
                     <td>생년월일</td>
@@ -61,13 +93,19 @@
                 </tr>
                 <tr>
                     <td>전화번호</td>
-                    <td><select name="" id=""></select>-
-                    <input type="number">
-                    <input type="number"></td>
+                    <td><select name="" id="">
+                        <option value="">010</option>
+                        <option value="">02</option>
+                        <option value="">031</option>
+                        <option value="">032</option>
+                        <option value="">042</option>
+                    </select>-
+                    <input type="text" maxlength="4">
+                    <input type="text" maxlength="4"></td>
                 </tr>
                 <tr>
                     <td>희망연봉</td>
-                    <td></td>
+                    <td><input type="range" max="8000" min="2500" step="100"></td>
                 </tr>
                 <tr>
                     <td>취미</td>
